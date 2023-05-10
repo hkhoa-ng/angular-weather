@@ -1,0 +1,10 @@
+<div class="search-bar">
+  <input
+    type="text"
+    placeholder="Enter city name"
+    spellcheck="false"
+    (keyup.enter)="onSubmit()"
+    [(ngModel)]="city"
+  />
+  <button mat-mini-fab (click)="onSubmit()"><mat-icon>search</mat-icon></button>
+</div>

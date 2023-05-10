@@ -1,0 +1,27 @@
+<div class="weather-detail">
+  <h2 class="city">{{ weather.location }}</h2>
+
+  <div class="condition">
+    <img [src]="weather.icon" class="weather-icon" />
+    <p>{{ weather.condition }}</p>
+  </div>
+
+  <h1 class="temp">{{ weather.temp }}°C</h1>
+
+  <div class="details">
+    <div class="col">
+      <img src="./assets/images/humidity.png" />
+      <div>
+        <p class="humidity">{{ weather.humidity }}%</p>
+        <p class="description">Humidity</p>
+      </div>
+    </div>
+    <div class="col">
+      <img src="./assets/images/wind.png" />
+      <div>
+        <p class="wind">{{ weather.wind }} km/h</p>
+        <p class="description">Wind Speed</p>
+      </div>
+    </div>
+  </div>
+</div>
